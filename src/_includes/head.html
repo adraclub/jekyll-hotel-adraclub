@@ -1,24 +1,39 @@
-<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Content-Language" content="en" />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#4188c9">
 
-  <title>
-    {% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}
-    {% else %}{{ site.title | escape }}{% endif %}
-  </title>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
 
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+<link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
 
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!-- Generated: {{ site.time }} -->
 
-  <link rel="stylesheet" href="{{"/assets/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}">
+<title>{% if page.title %}{{ page.title }} - {% endif %}{% if layout.title %}{{ layout.title }} - {% endif %}{{ site.description }}</title>
 
-  <link rel="stylesheet" href="{{"/assets/vendor/fontawesome-free/css/all.min.css" | relative_url }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
+<script src="./assets/vendor/tabler-ui/js/require.min.js"></script>
+<script>
+    requirejs.config({
+        baseUrl: '.'
+    });
+</script>
 
-  <link rel="stylesheet" href="{{"/assets/main.css" | relative_url }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+<!-- Dashboard Core -->
+<link href="./assets/vendor/tabler-ui/css/dashboard{% if page.rtl %}.rtl{% endif %}.css" rel="stylesheet" />
+<script src="./assets/vendor/tabler-ui/js/dashboard.js"></script>
 
-</head>
+{% for plugin in site.theme-plugins %}
+<!-- {{ plugin[1].name }} Plugin -->
+{% if plugin[1].files contains 'css' %}<link href="./assets/vendor/tabler-ui/plugins/{{ plugin[0] }}/plugin.css" rel="stylesheet" />{% endif %}
+{% if plugin[1].files contains 'js' %}<script src="./assets/vendor/tabler-ui/plugins/{{ plugin[0] }}/plugin.js"></script>{% endif %}
+{% endfor %}

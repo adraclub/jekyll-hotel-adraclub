@@ -1,11 +1,14 @@
 title:             Adraclub Holiday Homes Jekyll Theme
-email:             your-email@example.com
 description:       A Blog Theme by Statix Design
+
+source: src
+
+email:             your-email@example.com
 author:            Statix Design
 baseurl:           "/jekyll-hotel-adraclub"
 url:               "http://adraclub.github.io"
 
-source: src
+
 
 # Social Profiles
 twitter_username:  adraclub
@@ -19,3 +22,30 @@ paginate_path:     "/posts/page:num/"
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-include-cache
+
+theme-plugins:
+  charts-c3:
+    name: c3.js Charts
+    files: [css, js]
+  maps-google:
+    name: Google Maps
+    files: [css, js]
+  input-mask:
+    name: Input Mask
+    files: [js]
+  datatables:
+    name: Datatables
+    files: [js]
+#  iconfonts:
+#    name: Iconfonts
+#    files: [css]
+#  prismjs:
+#    name: Code Highlight
+#    files: [css, js]
+#  fullcalendar:
+#    name: FullCalendar
+#    files: [css, js]
+#  weather:
+#    name: Weather
+#    files: [css]
