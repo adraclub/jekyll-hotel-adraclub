@@ -1,0 +1,21 @@
+title:             Adraclub Holiday Homes Jekyll Theme
+email:             your-email@example.com
+description:       A Blog Theme by Statix Design
+author:            Statix Design
+baseurl:           "/jekyll-hotel-adraclub"
+url:               "http://adraclub.github.io"
+
+source: src
+
+# Social Profiles
+twitter_username:  adraclub
+github_username:   adraclub
+facebook_username: adraclub
+
+# Build settings
+markdown:          kramdown
+paginate:          5
+paginate_path:     "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate

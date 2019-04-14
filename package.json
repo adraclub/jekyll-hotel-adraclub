@@ -1,0 +1,35 @@
+{
+    "title": "Adraclub Holiday Homes Jekyll",
+    "name": "jekyll-hotel-adraclub",
+    "version": "1.0.0",
+    "description": "Clean and useful jekyll theme for Holiday Homes.",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://statixdesign.com/template-overviews/jekyll-hotel-adraclub",
+    "bugs": {
+        "url": "https://github.com/adraclub/jekyll-hotel-adraclub/issues",
+        "email": "feedback@statixdesign.com"
+    },
+    "license": "MIT",
+    "author": "Statix Design",
+    "contributors": [
+        "Ahmet Cangir (http://ahmetcangir.github.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/adraclub/jekyll-hotel-adraclub.git"
+    },
+    "dependencies": {
+        "tabler-ui": "^0.0.34"
+    },
+    "devDependencies": {
+        "browser-sync": "2.26.3",
+        "gulp": "4.0.0"
+    }
+}
