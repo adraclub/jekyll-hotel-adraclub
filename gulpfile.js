@@ -8,7 +8,7 @@ gulp.task('vendor', function(cb) {
   gulp.src([
       '../../node_modules/tabler-ui/dist/assets/**/*'
     ])
-    .pipe(gulp.dest('./assets/vendor/tabler-ui'))
+    .pipe(gulp.dest('./assets'))
 
   cb();
 
