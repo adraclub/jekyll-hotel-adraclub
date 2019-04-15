@@ -5,8 +5,6 @@ author:            Statix Design
 baseurl:           "/jekyll-hotel-adraclub"
 url:               "http://adraclub.github.io"
 
-source: src
-
 # Social Profiles
 twitter_username:  adraclub
 github_username:   adraclub
