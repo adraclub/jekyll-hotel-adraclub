@@ -48,3 +48,7 @@ theme-plugins:
 #  weather:
 #    name: Weather
 #    files: [css]
+
+exclude:
+  - package.json
+  - gulpfile.js
